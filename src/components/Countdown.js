@@ -110,7 +110,7 @@ function Countdown() {
                 type="password"
                 value={password}
                 onChange={handlePasswordChange}
-                placeholder="Enter password to unlock stop button"
+                placeholder="Enter password"
               />
               <button onClick={handlePasswordSubmit}>Submit Password</button>
             </div>
