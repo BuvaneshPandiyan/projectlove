@@ -1,0 +1,169 @@
+/* Countdown Page Styles */
+.countdown-section {
+  background: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Lora', serif; /* Elegant font */
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ff6b6b; /* Soft pink color */
+}
+
+.countdown-note {
+  font-size: 18px;
+  color: #777;
+  margin-top: -10px;
+  font-style: italic;
+}
+
+.my-promise {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #444;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.countdown {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff6b6b; /* Soft pink for emphasis */
+}
+
+.time-left {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.closure-message {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.closure-message p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.countdown-section h2, .closure-message p {
+  transition: color 0.3s ease;
+}
+
+/* Add animations for transition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.countdown-section {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .countdown-section {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .countdown-note, .my-promise, .closure-message {
+    font-size: 18px;
+  }
+  .time-left {
+    font-size: 32px;
+  }
+}
+
+/* Password Section Styles */
+.password-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.password-section input {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #ff6b6b; /* Soft pink border */
+  color: #333;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+  transition: border 0.3s ease;
+  margin-bottom: 20px; /* Add space below the input field */
+}
+
+.password-section input:focus {
+  border-color: #ff3b3b; /* Darker pink border on focus */
+}
+
+.password-section button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  font-size: 18px;
+  background-color: #ff6b6b; /* Soft pink */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px; /* Increased space between input and button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.password-section button:hover {
+  background-color: #ff3b3b; /* Darker pink on hover */
+}
+
+/* Stop Countdown button */
+.stop-countdown-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #ff6b6b; /* Soft pink */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.stop-countdown-button:hover {
+  background-color: #ff3b3b; /* Darker pink on hover */
+}
+
+.stop-countdown-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,95 @@
+/* Header Styles */
+.unique-header {
+  background: linear-gradient(135deg, #ff6b6b, #f1a7b3);
+  color: white;
+  text-align: center;
+  padding: 15px 15px; /* Reduced padding */
+  border-radius: 10px; /* Slightly smaller radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced box shadow size */
+  position: relative;
+  z-index: 1;
+}
+
+.unique-header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px; /* Reduced font size */
+  margin-bottom: 8px; /* Reduced margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly lighter shadow */
+  letter-spacing: 1px; /* Reduced letter-spacing */
+}
+
+.unique-header nav {
+  white-space: nowrap; /* Prevents the nav items from wrapping to the next line */
+  overflow-x: scroll; /* Allows horizontal scrolling */
+  padding-top: 15px; /* Adjust top padding */
+  -ms-overflow-style: none;  /* Hide scrollbar in IE */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.unique-header nav::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.unique-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  margin: 0;
+}
+
+.unique-header nav ul li {
+  margin: 0 15px; /* Reduced spacing between items */
+}
+
+.unique-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.unique-header nav ul li a:hover {
+  color: #f1a7b3;
+}
+
+.unique-header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f1a7b3;
+  transition: width 0.3s ease;
+}
+
+.unique-header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 768px) {
+  .unique-header h1 {
+    font-size: 24px; /* Further reduced font size for mobile */
+    margin-bottom: 5px; /* Smaller margin */
+  }
+
+  .unique-header nav ul {
+    display: flex;
+    justify-content: flex-start; /* Ensure items stay aligned horizontally */
+  }
+
+  .unique-header nav ul li {
+    margin: 0 10px; /* Reduced margin to fit on small screens */
+  }
+
+  .unique-header nav ul li a {
+    font-size: 18px; /* Slightly larger font size on mobile */
+    padding: 8px 0; /* Add padding for better tap targets */
+  }
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0 20px; /* Adds padding on left and right of the body */
+}
+
+body, h2, p {
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.6;
+}
+
+.story-text {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px; /* Adds space inside the container */
+  animation: fadeIn 2s ease-in-out; /* Fading effect for the story container */
+}
+
+h2 {
+  text-align: center;
+  font-size: 45px; /* Increased font size for the heading */
+  color: #7f3f5b;
+  animation: fadeIn 2s ease-in-out; /* Fading effect for the heading */
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #5f4b8b;
+  font-size: 22px; /* Increased font size for the paragraphs */
+  animation: fadeIn 2s ease-in-out; /* Fading effect for the paragraph */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); /* Slight upward motion */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
