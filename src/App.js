@@ -13,6 +13,7 @@ function App() {
         <Header />
         <Routes>
           {/* Define the routes */}
+          <Route path="/" element={<Story />} />
           <Route path="/story" element={<Story />} />
           <Route path="/countdown" element={<Countdown />} />
           <Route path="/regretandapologies" element={<RegretAndApologies />} />
