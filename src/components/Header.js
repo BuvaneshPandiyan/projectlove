@@ -11,7 +11,7 @@ function Header() {
           <li><Link to="/story">Our Story</Link></li> {/* Replace href with to */}
           <li><Link to="/countdown">Countdown</Link></li> {/* Replace href with to */}
           <li><Link to="/regretandapologies">Regrets And Apologies</Link></li>
-          <li><Link to="/frequentlyaskedquestions">Frequently Asked Questions</Link></li>
+          <li><Link to="/frequentlyaskedquestions">FAQ</Link></li>
 
         </ul>
       </nav>
